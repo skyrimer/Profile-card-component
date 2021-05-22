@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+$dark_cyan: hsl(185, 75%, 39%);
+$dark_blue: hsl(229, 23%, 23%);
+$dark_graish: hsl(227, 10%, 46%);
+$dark_gray: hsl(0, 0%, 59%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+h4 {
+  color: $dark_blue;
+}
+p {
+  color: $dark_graish;
+}
+body {
+  background-color: $dark_cyan;
+}
+#top,
+#bottom {
+  position: fixed;
+  z-index: -1;
+}
+#top {
+  top: 0;
+  left: 0;
+  transform: translate(-70%, -60%);
+  @media screen and (min-width: 800px) {
+    transform: translate(-60%, -50%);
+  }
+  @media screen and (min-width: 1000px) {
+    transform: translate(-50%, -50%);
+  }
+}
+#bottom {
+  bottom: 0;
+  right: 0;
+  transform: translate(70%, 60%);
+  @media screen and (min-width: 800px) {
+    transform: translate(60%, 50%);
+  }
+  @media screen and (min-width: 1000px) {
+    transform: translate(50%, 50%);
+  }
+}
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1em;
+  width: 95%;
+  max-width: 383px;
+  background: white url("/images/bg-pattern-card.svg") no-repeat;
+  background-size: auto 8.5em;
+  .top-section {
+    width: 100%;
+    margin-top: 5.5em;
+    padding-bottom: 1.2em;
+    border-bottom: 1px solid rgba($color: $dark_gray, $alpha: 0.3);
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      border: 5px solid white;
+      border-radius: 50%;
+      margin-bottom: 2em;
+    }
+    h4 {
+      margin-bottom: 0.8em;
+      span {
+        font-weight: 400;
+        color: $dark_graish;
+      }
+    }
+    p {
+      font-size: 0.9em;
+    }
+  }
+  .cards {
+    padding: 2em 0.5em;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    h4 {
+      margin-bottom: 0.45em;
+    }
+    p {
+      font-size: 0.7em;
+      letter-spacing: 1.5px;
+    }
+  }
+}
