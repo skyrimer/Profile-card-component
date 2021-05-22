@@ -24,7 +24,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [https://github.com/skyrimer/Profile-card-component.git](https://github.com/skyrimer/Profile-card-component.git)
-- Live Site URL: [https://admiring-noyce-b82d28.netlify.app](https://admiring-noyce-b82d28.netlify.app)
+- Live Site URL: [https://pensive-babbage-ed7429.netlify.app](https://pensive-babbage-ed7429.netlify.app)
 
 ### Built with
 - HTML5
